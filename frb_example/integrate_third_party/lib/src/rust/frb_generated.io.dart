@@ -112,6 +112,9 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_DelayNodePtr =>
       wire._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNodePtr;
 
+  CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_DocPtr => wire
+      ._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDocPtr;
+
   CrossPlatformFinalizerArg
       get rust_arc_decrement_strong_count_DummyStructPtr => wire
           ._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStructPtr;
@@ -424,6 +427,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   DelayNode
       dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           dynamic raw);
+
+  @protected
+  Doc dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      dynamic raw);
 
   @protected
   DummyStruct
@@ -1117,6 +1124,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   DelayNode
       dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           dynamic raw);
+
+  @protected
+  Doc dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      dynamic raw);
 
   @protected
   DummyStruct
@@ -1816,6 +1827,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
           SseDeserializer deserializer);
 
   @protected
+  Doc sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      SseDeserializer deserializer);
+
+  @protected
   DummyStruct
       sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           SseDeserializer deserializer);
@@ -2490,6 +2505,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
           SseDeserializer deserializer);
 
   @protected
+  Doc sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      SseDeserializer deserializer);
+
+  @protected
   DummyStruct
       sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           SseDeserializer deserializer);
@@ -3080,6 +3099,11 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   void
       sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           DelayNode self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          Doc self, SseSerializer serializer);
 
   @protected
   void
@@ -3775,6 +3799,11 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   void
       sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           DelayNode self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          Doc self, SseSerializer serializer);
 
   @protected
   void
@@ -4872,6 +4901,38 @@ class RustLibWire implements BaseWire {
           'frbgen_frb_example_integrate_third_party_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode');
   late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode =
       _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNodePtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDocPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_integrate_third_party_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc');
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc =
+      _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDocPtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDocPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_integrate_third_party_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc');
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc =
+      _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDocPtr
           .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
 
   void

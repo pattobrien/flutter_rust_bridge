@@ -9,5 +9,10 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 Future<void> f({required DummyStruct a}) =>
     RustLib.instance.api.crateApiSimpleF(a: a);
 
+Future<Doc> createDoc() => RustLib.instance.api.crateApiSimpleCreateDoc();
+
+// Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner< Doc>>
+abstract class Doc implements RustOpaqueInterface {}
+
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DummyStruct>>
 abstract class DummyStruct implements RustOpaqueInterface {}

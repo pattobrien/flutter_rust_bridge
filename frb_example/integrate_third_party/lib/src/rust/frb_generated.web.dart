@@ -114,6 +114,9 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_DelayNodePtr =>
       wire.rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode;
 
+  CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_DocPtr => wire
+      .rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc;
+
   CrossPlatformFinalizerArg
       get rust_arc_decrement_strong_count_DummyStructPtr => wire
           .rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct;
@@ -426,6 +429,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   DelayNode
       dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           dynamic raw);
+
+  @protected
+  Doc dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      dynamic raw);
 
   @protected
   DummyStruct
@@ -1119,6 +1126,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   DelayNode
       dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           dynamic raw);
+
+  @protected
+  Doc dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      dynamic raw);
 
   @protected
   DummyStruct
@@ -1818,6 +1829,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
           SseDeserializer deserializer);
 
   @protected
+  Doc sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      SseDeserializer deserializer);
+
+  @protected
   DummyStruct
       sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           SseDeserializer deserializer);
@@ -2492,6 +2507,10 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
           SseDeserializer deserializer);
 
   @protected
+  Doc sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+      SseDeserializer deserializer);
+
+  @protected
   DummyStruct
       sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           SseDeserializer deserializer);
@@ -3082,6 +3101,11 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   void
       sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
           DelayNode self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          Doc self, SseSerializer serializer);
 
   @protected
   void
@@ -3780,6 +3804,11 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
 
   @protected
   void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          Doc self, SseSerializer serializer);
+
+  @protected
+  void
       sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           DummyStruct self, SseSerializer serializer);
 
@@ -4427,6 +4456,18 @@ class RustLibWire implements BaseWire {
           .rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
               ptr);
 
+  void rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          int ptr) =>
+      wasmModule
+          .rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+              ptr);
+
+  void rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          int ptr) =>
+      wasmModule
+          .rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+              ptr);
+
   void rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDummyStruct(
           int ptr) =>
       wasmModule
@@ -4872,6 +4913,14 @@ extension type RustLibWasmModule._(JSObject _) implements JSObject {
 
   external void
       rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode(
+          int ptr);
+
+  external void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
+          int ptr);
+
+  external void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDoc(
           int ptr);
 
   external void

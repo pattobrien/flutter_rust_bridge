@@ -14,3 +14,7 @@ pub struct DummyStruct;
 pub fn f(a: DummyStruct) {
     let _ = a;
 }
+
+pub fn create_doc() -> yrs::Doc {
+    yrs::Doc::new()
+}

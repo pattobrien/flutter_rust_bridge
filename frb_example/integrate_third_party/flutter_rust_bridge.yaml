@@ -1,5 +1,5 @@
 rust_root: rust/
-rust_input: crate::api,web-audio-api
+rust_input: crate::api,web-audio-api,yrs
 dart_output: lib/src/rust
 dump_all: true
 local: true
